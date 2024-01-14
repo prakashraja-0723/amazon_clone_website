@@ -1,0 +1,45 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --primary: #e3e6e6;
+  --secondary: #131921;
+  --teritary: #232f3e;
+
+  --clr1: #ffffff;
+  --clr2: #febd69;
+  --clr3: #37475a;
+  --clr4: #131a22;
+  --clr5: #c7511f;
+}
+
+html {
+  font-family: "Amazon Ember", Arial, sans-serif;
+  scrollbar-width: none;
+  scroll-behavior: smooth;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.scroll-style::-webkit-scrollbar {
+  height: 0.7rem;
+}
+.scroll-style::-webkit-scrollbar-track {
+  border-radius: 100px;
+	margin: 5px;
+	background: transparent;
+}
+.scroll-style::-webkit-scrollbar-thumb {
+  background: transparent;
+  border-radius: 100px;
+}
+.scroll-style:hover::-webkit-scrollbar-thumb {
+  background: lightgray;
+}
+.scroll-style::-webkit-scrollbar-thumb:hover {
+  background: grey;
+}
