@@ -1,13 +1,88 @@
-import starts_at_99_01 from '/src/assets/images/@starts_at_99/01.png'
+import starts_at_99_01 from "/src/assets/images/@starts_at_99/01.png";
+import starts_at_99_02 from "/src/assets/images/@starts_at_99/02.png";
+import starts_at_99_03 from "/src/assets/images/@starts_at_99/03.png";
+import starts_at_99_04 from "/src/assets/images/@starts_at_99/04.png";
+
+import men_style_01 from "/src/assets/images/men_style/01.png";
+import men_style_02 from "/src/assets/images/men_style/02.png";
+import men_style_03 from "/src/assets/images/men_style/03.png";
+import men_style_04 from "/src/assets/images/men_style/04.png";
+
+import headphone_brands_01 from "/src/assets/images/headphone_brands/01.png";
+import headphone_brands_02 from "/src/assets/images/headphone_brands/02.png";
+import headphone_brands_03 from "/src/assets/images/headphone_brands/03.png";
+import headphone_brands_04 from "/src/assets/images/headphone_brands/04.png";
+
+import home_style_01 from "/src/assets/images/home_style/01.png";
+import home_style_02 from "/src/assets/images/home_style/02.png";
+import home_style_03 from "/src/assets/images/home_style/03.png";
+import home_style_04 from "/src/assets/images/home_style/04.png";
+
+import home_appliance_01 from "/src/assets/images/home_appliance/01.png";
+import home_appliance_02 from "/src/assets/images/home_appliance/02.png";
+import home_appliance_03 from "/src/assets/images/home_appliance/03.png";
+import home_appliance_04 from "/src/assets/images/home_appliance/04.png";
+
+import amazon_brands_more_01 from "/src/assets/images/amazon_brands_&_more/01.png";
+import amazon_brands_more_02 from "/src/assets/images/amazon_brands_&_more/02.png";
+import amazon_brands_more_03 from "/src/assets/images/amazon_brands_&_more/03.png";
+import amazon_brands_more_04 from "/src/assets/images/amazon_brands_&_more/04.png";
+
+import top_brands_off_01 from "/src/assets/images/top-brands-off/01.jpg";
+import top_brands_off_02 from "/src/assets/images/top-brands-off/02.jpg";
+import top_brands_off_03 from "/src/assets/images/top-brands-off/03.jpg";
+import top_brands_off_04 from "/src/assets/images/top-brands-off/04.jpg";
+
+import birthday_gift_01 from "/src/assets/images/birthday-gift/01.png";
+import birthday_gift_02 from "/src/assets/images/birthday-gift/02.png";
+import birthday_gift_03 from "/src/assets/images/birthday-gift/03.png";
+import birthday_gift_04 from "/src/assets/images/birthday-gift/04.png";
+
+import wise_range_tv_01 from "/src/assets/images/wise-range-tv/01.jpg";
+import wise_range_tv_02 from "/src/assets/images/wise-range-tv/02.jpg";
+import wise_range_tv_03 from "/src/assets/images/wise-range-tv/03.jpg";
+import wise_range_tv_04 from "/src/assets/images/wise-range-tv/04.jpg";
+
+import today_deal_01 from "/src/assets/images/today's_deals/01.png";
+import today_deal_02 from "/src/assets/images/today's_deals/02.png";
+import today_deal_03 from "/src/assets/images/today's_deals/03.png";
+import today_deal_04 from "/src/assets/images/today's_deals/04.png";
+import today_deal_05 from "/src/assets/images/today's_deals/05.png";
+import today_deal_06 from "/src/assets/images/today's_deals/06.png";
+import today_deal_07 from "/src/assets/images/today's_deals/07.png";
+import today_deal_08 from "/src/assets/images/today's_deals/08.png";
+import today_deal_09 from "/src/assets/images/today's_deals/09.png";
+import today_deal_10 from "/src/assets/images/today's_deals/10.png";
+import today_deal_11 from "/src/assets/images/today's_deals/11.png";
+import today_deal_12 from "/src/assets/images/today's_deals/12.png";
+import today_deal_13 from "/src/assets/images/today's_deals/13.png";
+import today_deal_14 from "/src/assets/images/today's_deals/14.png";
+import today_deal_15 from "/src/assets/images/today's_deals/15.png";
+
+import kitchen_essentials_01 from "/src/assets/images/kitchen_essentials/01.png";
+import kitchen_essentials_02 from "/src/assets/images/kitchen_essentials/02.png";
+import kitchen_essentials_03 from "/src/assets/images/kitchen_essentials/03.png";
+import kitchen_essentials_04 from "/src/assets/images/kitchen_essentials/04.png";
+import kitchen_essentials_05 from "/src/assets/images/kitchen_essentials/05.png";
+import kitchen_essentials_06 from "/src/assets/images/kitchen_essentials/06.png";
+import kitchen_essentials_07 from "/src/assets/images/kitchen_essentials/07.png";
+import kitchen_essentials_08 from "/src/assets/images/kitchen_essentials/08.png";
+import kitchen_essentials_09 from "/src/assets/images/kitchen_essentials/09.png";
+import kitchen_essentials_10 from "/src/assets/images/kitchen_essentials/10.png";
+import kitchen_essentials_11 from "/src/assets/images/kitchen_essentials/11.png";
+import kitchen_essentials_12 from "/src/assets/images/kitchen_essentials/12.png";
+import kitchen_essentials_13 from "/src/assets/images/kitchen_essentials/13.png";
+import kitchen_essentials_14 from "/src/assets/images/kitchen_essentials/14.png";
+
 const PRODUCT_DATA = [
   {
     id: "card1",
     title: `Starting ₹99 | All your home improvement needs`,
     thumbnails: [
       starts_at_99_01,
-      "/src/assets/images/@starts_at_99/02.png",
-      "/src/assets/images/@starts_at_99/03.png",
-      "/src/assets/images/@starts_at_99/04.png",
+      starts_at_99_02,
+      starts_at_99_03,
+      starts_at_99_04,
     ],
     thumbnails_title: [
       "Spin mops, wipes & more",
@@ -20,12 +95,7 @@ const PRODUCT_DATA = [
   {
     id: "card2",
     title: `Up to 60% off | Styles for men`,
-    thumbnails: [
-      "./src/assets/images/men_style/01.png",
-      "./src/assets/images/men_style/02.png",
-      "./src/assets/images/men_style/03.png",
-      "./src/assets/images/men_style/04.png",
-    ],
+    thumbnails: [men_style_01, men_style_02, men_style_03, men_style_04],
     thumbnails_title: ["Clothing", "Footwear", "Watches", "Bags & wallets"],
     open_link_text: "End of season sale",
   },
@@ -33,10 +103,10 @@ const PRODUCT_DATA = [
     id: "card3",
     title: `Up to 75% off | Headphones`,
     thumbnails: [
-      "./src/assets/images/headphone_brands/01.png",
-      "./src/assets/images/headphone_brands/02.png",
-      "./src/assets/images/headphone_brands/03.png",
-      "./src/assets/images/headphone_brands/04.png",
+      headphone_brands_01,
+      headphone_brands_02,
+      headphone_brands_03,
+      headphone_brands_04,
     ],
     thumbnails_title: [
       "Up to 75% off I boAt",
@@ -49,12 +119,7 @@ const PRODUCT_DATA = [
   {
     id: "card4",
     title: `Revamp your home in style`,
-    thumbnails: [
-      "/src/assets/images/home_style/01.png",
-      "/src/assets/images/home_style/02.png",
-      "/src/assets/images/home_style/03.png",
-      "/src/assets/images/home_style/04.png",
-    ],
+    thumbnails: [home_style_01, home_style_02, home_style_03, home_style_04],
     thumbnails_title: [
       "Spin mops, wipes & more",
       "Bathroom hardware & accessories",
@@ -67,10 +132,10 @@ const PRODUCT_DATA = [
     id: "card5",
     title: `Appliances for your home | Up to 55% off`,
     thumbnails: [
-      "/src/assets/images/home_appliance/01.png",
-      "/src/assets/images/home_appliance/02.png",
-      "/src/assets/images/home_appliance/03.png",
-      "/src/assets/images/home_appliance/04.png",
+      home_appliance_01,
+      home_appliance_02,
+      home_appliance_03,
+      home_appliance_04,
     ],
     thumbnails_title: [
       "Air conditioners",
@@ -84,10 +149,10 @@ const PRODUCT_DATA = [
     id: "card6",
     title: `Appliances for your home | Up to 55% off`,
     thumbnails: [
-      "/src/assets/images/home_appliance/01.png",
-      "/src/assets/images/home_appliance/02.png",
-      "/src/assets/images/home_appliance/03.png",
-      "/src/assets/images/home_appliance/04.png",
+      home_appliance_01,
+      home_appliance_02,
+      home_appliance_03,
+      home_appliance_04,
     ],
     thumbnails_title: [
       "Air conditioners",
@@ -101,10 +166,10 @@ const PRODUCT_DATA = [
     id: "card7",
     title: `Starting ₹199 | Amazon brands & more`,
     thumbnails: [
-      "/src/assets/images/amazon_brands_&_more/01.png",
-      "/src/assets/images/amazon_brands_&_more/02.png",
-      "/src/assets/images/amazon_brands_&_more/03.png",
-      "/src/assets/images/amazon_brands_&_more/04.png",
+      amazon_brands_more_01,
+      amazon_brands_more_02,
+      amazon_brands_more_03,
+      amazon_brands_more_04,
     ],
     thumbnails_title: [
       `Professional tools`,
@@ -118,21 +183,21 @@ const PRODUCT_DATA = [
     id: "card8",
     title: "Today's Deals",
     thumbnails: [
-      "./src/assets/images/today's_deals/01.png",
-      "./src/assets/images/today's_deals/02.png",
-      "./src/assets/images/today's_deals/03.png",
-      "./src/assets/images/today's_deals/04.png",
-      "./src/assets/images/today's_deals/05.png",
-      "./src/assets/images/today's_deals/06.png",
-      "./src/assets/images/today's_deals/07.png",
-      "./src/assets/images/today's_deals/08.png",
-      "./src/assets/images/today's_deals/09.png",
-      "./src/assets/images/today's_deals/10.png",
-      "./src/assets/images/today's_deals/11.png",
-      "./src/assets/images/today's_deals/12.png",
-      "./src/assets/images/today's_deals/13.png",
-      "./src/assets/images/today's_deals/14.png",
-      "./src/assets/images/today's_deals/15.png",
+      today_deal_01,
+      today_deal_02,
+      today_deal_03,
+      today_deal_04,
+      today_deal_05,
+      today_deal_06,
+      today_deal_07,
+      today_deal_08,
+      today_deal_09,
+      today_deal_10,
+      today_deal_11,
+      today_deal_12,
+      today_deal_13,
+      today_deal_14,
+      today_deal_15,
     ],
     offers: [
       "Up to 25% off",
@@ -175,20 +240,20 @@ const PRODUCT_DATA = [
     id: "card9",
     title: "Kitchen essentials I Amazon Brands & more",
     thumbnails: [
-      "./src/assets/images/kitchen_essentials/01.png",
-      "./src/assets/images/kitchen_essentials/02.png",
-      "./src/assets/images/kitchen_essentials/03.png",
-      "./src/assets/images/kitchen_essentials/04.png",
-      "./src/assets/images/kitchen_essentials/05.png",
-      "./src/assets/images/kitchen_essentials/06.png",
-      "./src/assets/images/kitchen_essentials/07.png",
-      "./src/assets/images/kitchen_essentials/08.png",
-      "./src/assets/images/kitchen_essentials/09.png",
-      "./src/assets/images/kitchen_essentials/10.png",
-      "./src/assets/images/kitchen_essentials/11.png",
-      "./src/assets/images/kitchen_essentials/12.png",
-      "./src/assets/images/kitchen_essentials/13.png",
-      "./src/assets/images/kitchen_essentials/14.png",
+      kitchen_essentials_01,
+      kitchen_essentials_02,
+      kitchen_essentials_03,
+      kitchen_essentials_04,
+      kitchen_essentials_05,
+      kitchen_essentials_06,
+      kitchen_essentials_07,
+      kitchen_essentials_08,
+      kitchen_essentials_09,
+      kitchen_essentials_10,
+      kitchen_essentials_11,
+      kitchen_essentials_12,
+      kitchen_essentials_13,
+      kitchen_essentials_14,
       "https://m.media-amazon.com/images/I/31waf7QrgYL._AC_SY200_.jpg",
     ],
     offers: [
@@ -232,10 +297,10 @@ const PRODUCT_DATA = [
     id: "card10",
     title: `Up to 65% off | Deals on wide range of TVs`,
     thumbnails: [
-      "/src/assets/images/wise-range-tv/01.jpg",
-      "/src/assets/images/wise-range-tv/02.jpg",
-      "/src/assets/images/wise-range-tv/03.jpg",
-      "/src/assets/images/wise-range-tv/04.jpg",
+      wise_range_tv_01,
+      wise_range_tv_02,
+      wise_range_tv_03,
+      wise_range_tv_04,
     ],
     thumbnails_title: [
       "Budget TVs | Starting ₹5,999",
@@ -249,10 +314,10 @@ const PRODUCT_DATA = [
     id: "card11",
     title: `Minimum 60% off | Deals on top brands`,
     thumbnails: [
-      "/src/assets/images/top-brands-off/01.jpg",
-      "/src/assets/images/top-brands-off/02.jpg",
-      "/src/assets/images/top-brands-off/03.jpg",
-      "/src/assets/images/top-brands-off/04.jpg",
+      top_brands_off_01,
+      top_brands_off_02,
+      top_brands_off_03,
+      top_brands_off_04,
     ],
     thumbnails_title: [
       `Tops & tees`,
@@ -266,10 +331,10 @@ const PRODUCT_DATA = [
     id: "card12",
     title: `Appliances for your home | Up to 55% off`,
     thumbnails: [
-      "/src/assets/images/home_appliance/01.png",
-      "/src/assets/images/home_appliance/02.png",
-      "/src/assets/images/home_appliance/03.png",
-      "/src/assets/images/home_appliance/04.png",
+      home_appliance_01,
+      home_appliance_02,
+      home_appliance_03,
+      home_appliance_04,
     ],
     thumbnails_title: [
       "Air conditioners",
@@ -283,44 +348,43 @@ const PRODUCT_DATA = [
     id: "card13",
     title: `Birthday store`,
     thumbnails: [
-      "/src/assets/images/birthday-gift/01.png",
-      "/src/assets/images/birthday-gift/02.png",
-      "/src/assets/images/birthday-gift/03.png",
-      "/src/assets/images/birthday-gift/04.png",
+      birthday_gift_01,
+      birthday_gift_02,
+      birthday_gift_03,
+      birthday_gift_04,
     ],
     thumbnails_title: [
       "Gift for Women",
       "Gift for men",
       "Gift for Boys",
       "Gift for Girls",
-     
     ],
     open_link_text: "See more",
   },
   {
-    id:"card14",
+    id: "card14",
     title: "new series CRUSHED",
-    thumbnails: ['/src/assets/images/crushed-series-thumbnail.jpeg']
+    thumbnails: ["/src/assets/images/crushed-series-thumbnail.jpeg"],
   },
   {
     id: "card15",
     title: "Today's Deals",
     thumbnails: [
-      "./src/assets/images/today's_deals/07.png",
-      "./src/assets/images/today's_deals/02.png",
-      "./src/assets/images/today's_deals/03.png",
-      "./src/assets/images/today's_deals/04.png",
-      "./src/assets/images/today's_deals/05.png",
-      "./src/assets/images/today's_deals/06.png",
-      "./src/assets/images/today's_deals/07.png",
-      "./src/assets/images/today's_deals/08.png",
-      "./src/assets/images/today's_deals/09.png",
-      "./src/assets/images/today's_deals/10.png",
-      "./src/assets/images/today's_deals/11.png",
-      "./src/assets/images/today's_deals/12.png",
-      "./src/assets/images/today's_deals/13.png",
-      "./src/assets/images/today's_deals/14.png",
-      "./src/assets/images/today's_deals/15.png",
+      today_deal_01,
+      today_deal_02,
+      today_deal_03,
+      today_deal_04,
+      today_deal_05,
+      today_deal_06,
+      today_deal_07,
+      today_deal_08,
+      today_deal_09,
+      today_deal_10,
+      today_deal_11,
+      today_deal_12,
+      today_deal_13,
+      today_deal_14,
+      today_deal_15,
     ],
     offers: [
       "Up to 25% off",
@@ -357,13 +421,13 @@ const PRODUCT_DATA = [
       "Wallpapers Starting 149 from wolpin",
       // "Cooking and Cutting Tools from Top Brands"
     ],
-    
+
     open_link_text: "see all deals",
   },
   {
-    id:"card16",
+    id: "card16",
     title: "15% off on Flight Tickets",
-    thumbnails: ['/src/assets/images/flight_tickets_off_thumbnail.jpg']
+    thumbnails: ["/src/assets/images/flight_tickets_off_thumbnail.jpg"],
   },
 ];
 export default PRODUCT_DATA;
