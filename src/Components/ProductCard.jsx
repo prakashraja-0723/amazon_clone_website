@@ -2,6 +2,8 @@ import React from "react";
 import PRODUCT_DATA from "../product-data.js";
 import Card from "./ui/product-card/Card.jsx";
 
+import slum_golf_prime_thumbnail from "/src/assets/images/slum_golf_prime_thumbnail.jpg"
+
 const ProductCard = () => {
   return (
     <>
@@ -9,7 +11,7 @@ const ProductCard = () => {
         className={`relative -top-[340px] grid grid-cols-4 gap-5 w-full px-5`}
       >
         <div className={`bg-white lg:h-[200px] xl:h-[280px] left-1/2 w-[72%] -translate-x-1/2  m-5 flex flex-col absolute top-full items-center justify-center`}>
-          <img src={`/src/assets/images/slum_golf_prime_thumbnail.jpg`} alt="" className={`w-full h-full`}/>
+          <img src={slum_golf_prime_thumbnail} alt="" className={`w-full h-full`}/>
         </div>
         <div
           className={`w-full max-w-[350px] bg-white h-[420px] p-5 flex flex-col`}
