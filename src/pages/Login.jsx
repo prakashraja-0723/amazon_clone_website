@@ -1,28 +1,38 @@
 import React, { useState } from "react";
 import AuthFoot from "../Components/ui/auth/AuthFoot.jsx";
 import AuthHead from "../Components/ui/auth/AuthHead.jsx";
-import {Link} from "react-router-dom";
+import { Link } from "react-router-dom";
 
 const Login = () => {
   const [input, setInput] = useState("");
-  const [checkAuth, setCheckAuth] = useState(false)
+  const [checkAuth, setCheckAuth] = useState(false);
 
-  const handleChangeInput = (e) => {
+  const phone_regEx =
+    /^(?:(?:\+?1\s*(?:[.-]\s*)?)?(?:\(\s*([2-9]1[02-9]|[2-9][02-8]1|[2-9][02-8][02-9])\s*\)|([2-9]1[02-9]|[2-9][02-8]1|[2-9][02-8][02-9]))\s*(?:[.-]\s*)?)?([2-9]1[02-9]|[2-9][02-9]1|[2-9][02-9]{2})\s*(?:[.-]\s*)?([0-9]{4})(?:\s*(?:#|x\.?|ext\.?|extension)\s*(\d+))?$/;
+  const email_regEx = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?(?:\.[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?)*$/;
+
+  const handleChangeInput = (e,phone_regEx,email_regEx) => {
     setInput(e.target.value);
+    if (input.match(phone_regEx) || input.match(email_regEx)) {
+      setCheckAuth(true);
+      console.log(checkAuth)
+    } else {
+      setCheckAuth(false);
+      console.log(checkAuth)
+    }
   };
-	
-	const handleCheckInput = (e) => {
-		e.preventDefault();
-		const phone_regEx = /^(?:(?:\+?1\s*(?:[.-]\s*)?)?(?:\(\s*([2-9]1[02-9]|[2-9][02-8]1|[2-9][02-8][02-9])\s*\)|([2-9]1[02-9]|[2-9][02-8]1|[2-9][02-8][02-9]))\s*(?:[.-]\s*)?)?([2-9]1[02-9]|[2-9][02-9]1|[2-9][02-9]{2})\s*(?:[.-]\s*)?([0-9]{4})(?:\s*(?:#|x\.?|ext\.?|extension)\s*(\d+))?$/;
-		const email_regEx = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-		
-		if (input.match(phone_regEx) || input.match(email_regEx)) {
-			setCheckAuth(true)
-		}else{
-      setCheckAuth(false)
-			alert("Please enter a valid email or phone number");
-		}
-	}
+
+  const handleCheckInput = (e,phone_regEx,email_regEx) => {
+    e.preventDefault();
+    if (input.match(phone_regEx) || input.match(email_regEx)) {
+      setCheckAuth(true);
+      console.log(checkAuth)
+    } else {
+      alert("Please enter a valid email or phone number.");
+      setCheckAuth(false);
+      console.log(checkAuth)
+    }
+  };
 
   return (
     <div
@@ -45,18 +55,24 @@ const Login = () => {
             <input
               type="text"
               className={`py-[3px] px-[7px] border border-[#a6a6a6] w-full h-[31px] leading-normal bg-white rounded-[3px] outline-none focus:bg-[#f7feff] shadow-input-sh focus:shadow-focus-sh transition`}
-              onChange={handleChangeInput}
+              onChange={(e)=>{handleChangeInput(e,phone_regEx,email_regEx) }}
+              onKeyUp={(e)=>{handleChangeInput(e,phone_regEx,email_regEx) }}
               id={`email_phone`}
               value={input}
             />
           </div>
           <div className={`my-[22px]`}>
-            <Link to={checkAuth ? "/home" : "/"}
+            <button
               className={` transition bg-[#FFD814] border border-[#FCD200] rounded-[8px] shadow w-full hover:bg-[#F7CA00]  h-[29px] mb-[18px]`}
-							onClick={handleCheckInput}
+              onClick={(e)=>{ handleCheckInput(e,phone_regEx,email_regEx) }}
             >
-              Continue
-            </Link>
+              <Link
+                to={checkAuth ? "/home" : "/"}
+                className={`w-full px-[120px] `}
+              >
+                Continue
+              </Link>
+            </button>
             <span className={`text-[12px]`}>
               By continuing, you agree to Amazon's{" "}
               <span
