@@ -1,9 +1,10 @@
+import starts_at_99_01 from '/src/assets/images/@starts_at_99/01.png'
 const PRODUCT_DATA = [
   {
     id: "card1",
     title: `Starting ₹99 | All your home improvement needs`,
     thumbnails: [
-      "/src/assets/images/@starts_at_99/01.png",
+      starts_at_99_01,
       "/src/assets/images/@starts_at_99/02.png",
       "/src/assets/images/@starts_at_99/03.png",
       "/src/assets/images/@starts_at_99/04.png",
