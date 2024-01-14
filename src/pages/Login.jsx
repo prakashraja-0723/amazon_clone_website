@@ -1,9 +1,11 @@
 import React, { useState } from "react";
 import AuthFoot from "../Components/ui/auth/AuthFoot.jsx";
 import AuthHead from "../Components/ui/auth/AuthHead.jsx";
+import {Link} from "react-router-dom";
 
 const Login = () => {
   const [input, setInput] = useState("");
+  const [checkAuth, setCheckAuth] = useState(false)
 
   const handleChangeInput = (e) => {
     setInput(e.target.value);
@@ -15,8 +17,9 @@ const Login = () => {
 		const email_regEx = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 		
 		if (input.match(phone_regEx) || input.match(email_regEx)) {
-			window.location.href = "/home";
+			setCheckAuth(true)
 		}else{
+      setCheckAuth(false)
 			alert("Please enter a valid email or phone number");
 		}
 	}
@@ -48,12 +51,12 @@ const Login = () => {
             />
           </div>
           <div className={`my-[22px]`}>
-            <button
+            <Link to={checkAuth ? "/home" : "/"}
               className={` transition bg-[#FFD814] border border-[#FCD200] rounded-[8px] shadow w-full hover:bg-[#F7CA00]  h-[29px] mb-[18px]`}
 							onClick={handleCheckInput}
             >
               Continue
-            </button>
+            </Link>
             <span className={`text-[12px]`}>
               By continuing, you agree to Amazon's{" "}
               <span
