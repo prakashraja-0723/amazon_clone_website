@@ -74,6 +74,9 @@ import kitchen_essentials_12 from "/src/assets/images/kitchen_essentials/12.png"
 import kitchen_essentials_13 from "/src/assets/images/kitchen_essentials/13.png";
 import kitchen_essentials_14 from "/src/assets/images/kitchen_essentials/14.png";
 
+import crushed_thumbnail from "/src/assets/images/crushed-series-thumbnail.jpeg"
+import flight_tickets_off_thumbnail from "/src/assets/images/flight_tickets_off_thumbnail.jpg"
+
 const PRODUCT_DATA = [
   {
     id: "card1",
@@ -364,7 +367,7 @@ const PRODUCT_DATA = [
   {
     id: "card14",
     title: "new series CRUSHED",
-    thumbnails: ["/src/assets/images/crushed-series-thumbnail.jpeg"],
+    thumbnails: [crushed_thumbnail],
   },
   {
     id: "card15",
@@ -427,7 +430,7 @@ const PRODUCT_DATA = [
   {
     id: "card16",
     title: "15% off on Flight Tickets",
-    thumbnails: ["/src/assets/images/flight_tickets_off_thumbnail.jpg"],
+    thumbnails: [flight_tickets_off_thumbnail],
   },
 ];
 export default PRODUCT_DATA;
